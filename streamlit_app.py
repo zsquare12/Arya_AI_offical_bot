@@ -1,4 +1,4 @@
-from main.py import ChatBot 
+from main import ChatBot 
 import streamlit as st
 
 

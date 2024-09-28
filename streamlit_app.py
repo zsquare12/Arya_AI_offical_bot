@@ -28,7 +28,7 @@ if input := st.chat_input():
 
 if st.session_state.messages[-1]["role"] != "assistant":
     with st.chat_message("assistant"):
-        with st.spinner("Getting your answer from from Data Base.."):
+        with st.spinner("Getting your answer from Data Base.."):
             response = generate_response(input) 
             st.write(response) 
     message = {"role": "assistant", "content": response}

@@ -1,13 +1,11 @@
 from main import ChatBot
 import streamlit as st
 
-
-# Instantiate the bot
 bot = ChatBot()
     
 st.set_page_config(page_title="ARYA-AI (The AryaBhatt offical bot)")
 with st.sidebar:
-    st.title('ARYA-AI (The AryaBhatt official bot)')
+    st.title('ARYA-AI (The AryaBhatt offical bot)')
 
 def generate_response(input):
     result = bot.rag_chain.invoke(input)
@@ -16,7 +14,7 @@ def generate_response(input):
 if "messages" not in st.session_state.keys():
     st.session_state.messages = [{"role": "assistant", "content": "Welcome, To the Arya_Bhatt Offical Bot"}]
 
-# Display the conversation history
+
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.write(message["content"])
@@ -25,7 +23,7 @@ for message in st.session_state.messages:
 if input := st.chat_input():
     st.session_state.messages.append({"role": "user", "content": input})
     with st.chat_message("user"):
-        st.write(user_input)
+        st.write(input)
 
 
 if st.session_state.messages[-1]["role"] != "assistant":

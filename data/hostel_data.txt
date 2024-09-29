@@ -1,3 +1,7 @@
+There are 100 rooms in Hostel.
+The hostel comprises 100 rooms, with four floors containing 25 rooms each, and each room can house three students.
+There are a total of 100 rooms in the hostel, distributed as 25 rooms on each of the four floors, with a capacity of three students per room.
+The hostel has 100 rooms, arranged across four floors with 25 rooms per floor, and each room can accommodate three students.
 Every student is responsible for maintaining cleanliness and hygiene in their allotted room. All garbage and daily waste material should be thrown only in the dustbins.
 Every student must deposit the full amount of Hostel, HMC, and Mess fees within the notified period of time.
 If a student quits or is expelled after allotment/possession, they will have to pay the mess labor charge and maintenance charges for the entire year.
@@ -44,9 +48,9 @@ Maintain hygiene by cleaning your room regularly.
 Keep your room neat and dispose of waste properly.
 The hostel fee is due by the 5th of every month.
 Yes, there is a 2% late fee if you miss the deadline.
-You can pay fees via DD.
+You can pay mess and hostel fees fees via DD.
 Hostel fees can be paid at the Arya Bhatt Warden office.
-No,You have to pay through DD.
+No online payment is not accepted,You have to pay through DD.
 Yes, maintenance charges are part of the hostel fees.
 Maintenance charges are 4000.
 You can report maintenance issues via DD named to HMC AryaBhat
@@ -57,16 +61,16 @@ Yes, each student is expected to maintain their room's hygiene by regularly clea
 It's mandatory for students to ensure that their rooms remain clean, with all waste being disposed of in the dustbins provided.
 Students are responsible for keeping their rooms clean and must dispose of waste properly, using the dustbins for all garbage.
 Students are required to maintain cleanliness in their rooms and should dispose of all waste in the designated dustbins to ensure proper hygiene.
-The annual hostel fee is 14,500 Rs, and it must be paid via demand draft (DD) only. Cash and online payments are not accepted.
+The annual hostel fee is 14,500 rupees, and it must be paid via demand draft (DD) only. Cash and online payments are not accepted.
 The hostel fee is Rs14,500 per year and must be submitted through a demand draft. Payments through cash or online methods are not allowed.
-The yearly hostel fee is 14,500 Rs, and payment is accepted only through a DD. Neither cash nor online payment options are available.
-The hostel fee for a year is Rs14,500, and payment can only be made through demand draft. Other payment methods like cash or online transfers are not accepted.
-The hostel fee is Rs14,500 for the year, and it must be paid by demand draft. Payments through cash or online methods are not accepted.
-The mess charges are Rs19,000 per semester.
-The mess fee is Rs19,000 for every semester.
-The mess charges amount to Rs19,000 per semester
-The mess service costs rs19,000 per semester.
-The mess charges for each semester are ?19,000.
+The yearly hostel fee is 14,500 rupees, and payment is accepted only through a DD. Neither cash nor online payment options are available.
+The hostel fee for a year is 14,500 rupees, and payment can only be made through demand draft. Other payment methods like cash or online transfers are not accepted.
+The hostel fee is 14,500 rupees for the year, and it must be paid by demand draft. Payments through cash or online methods are not accepted.
+The mess charges are  rupees rupees19,000 per semester.
+The mess fee is rupees 19,000 for every semester.
+The mess charges amount to rupees 19,000 per semester
+The mess service costs rupees 19,000 per semester.
+The mess charges for each semester are rupees 19,000.
 You need to inform the warden about your departure, after which your mess services will be paused for a maximum of 3 days.
 Notify the warden before you leave, and the mess will be closed for up to 3 days.
 You should inform the warden that youre going home, and your mess service will be suspended for a maximum of 3 days.

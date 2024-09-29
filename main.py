@@ -13,7 +13,7 @@ from langchain.schema.output_parser import StrOutputParser
 from langchain.llms import HuggingFaceHub
 import pinecone
 
-pinecone.init(api_key="PINECONE_API_KEY")
+pinecone.init(api_key="API_KEY_PINECONE")
 load_dotenv()
 loader = TextLoader('data/hostel_data.txt')
 documents = loader.load()
@@ -23,28 +23,33 @@ docs = text_splitter.split_documents(documents)
 embeddings = HuggingFaceEmbeddings()
 
 pinecone.init(
-    api_key= os.getenv('API_KEY_PINECONE'), 
+    api_key= os.getenv('API_KEY_PINECONE'),
     environment='gcp-starter'
 )
 
-index_name = "langchain-demo"
+index_name = "arya-data-base"
 
 if index_name not in pinecone.list_indexes():
-  
   pinecone.create_index(name=index_name, metric="cosine", dimension=768)
   docsearch = Pinecone.from_documents(docs, embeddings, index_name=index_name)
 else:
-  
   docsearch = Pinecone.from_existing_index(index_name, embeddings)
 
 
 
+
+repo_id = "mistralai/Mixtral-8x7B-Instruct-v0.1"
+llm = HuggingFaceHub(
+  repo_id=repo_id, 
+  model_kwargs={"temperature": 0.8, "top_k": 50}, 
+  huggingfacehub_api_token=os.getenv('HUGGING_FACE_API')
+)
+
 template = """
-You are a Arya a bot of hostel. These Human will ask you a questions about the hostel. 
+You Hostel warden. These Human will ask you a questions about the Arya Bhatt Hostel. 
 Use following piece of context to answer the question. 
 If you don't know the answer, just say you don't know. 
 Keep the answer within 1 sentences and concise.
-
 
 Question: {question}
 Answer: 
@@ -55,21 +60,19 @@ prompt = PromptTemplate(
   template=template, 
   input_variables=["context", "question"]
 )
-llm = HuggingFaceHub(
-    repo_id="mistralai/Mixtral-8x7B-Instruct-v0.1", 
-    huggingfacehub_api_token=os.getenv("HUGGING_FACE_API") 
-)
-
 
 rag_chain = (
   {"context": docsearch.as_retriever(),  "question": RunnablePassthrough()} 
   | prompt 
-  | llm 
+  | llm
   | StrOutputParser() 
 )
+
 class ChatBot():
+  load_dotenv()
   loader = TextLoader('data/hostel_data.txt')
   documents = loader.load()
+
   rag_chain = (
     {"context": docsearch.as_retriever(),  "question": RunnablePassthrough()} 
     | prompt 

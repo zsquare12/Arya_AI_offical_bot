@@ -25,7 +25,6 @@ pinecone.init(
     environment='gcp-starter'
 )
 
-# Define Index Name
 index_name = "langchain-demo"
 
 if index_name not in pinecone.list_indexes():

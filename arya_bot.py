@@ -13,7 +13,7 @@ from langchain.schema.output_parser import StrOutputParser
 from langchain.llms import HuggingFaceHub
 import pinecone
 
-pinecone.init(api_key="API_KEY_PINECONE")
+pinecone.init(api_key="PINECONE_API_KEY")
 load_dotenv()
 loader = TextLoader('data/hostel_data.txt')
 documents = loader.load()

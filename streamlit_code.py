@@ -1,4 +1,4 @@
-from main import ChatBot
+from arya_bot import ChatBot
 import streamlit as st
 
 bot = ChatBot()

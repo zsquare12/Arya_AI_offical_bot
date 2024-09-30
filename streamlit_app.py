@@ -2,7 +2,7 @@ import streamlit as st
 from arya_bot import give_answer
 
 # Set the title of the app
-st.title("Basic Text Input/Output App")
+st.title("arya_bot")
 
 # Create a text input field
 user_input = st.text_input("Enter some text")

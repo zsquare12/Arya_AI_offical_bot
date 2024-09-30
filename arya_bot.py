@@ -80,7 +80,11 @@ class ChatBot():
     | StrOutputParser() 
   )
 
-bot = ChatBot()
-user_input = input("Ask me anything: ")
-result = bot.rag_chain.invoke(user_input)
-print(result)
+
+def give_answer(question):
+  bot = ChatBot()
+  user_input = question
+  result = bot.rag_chain.invoke(user_input)
+  return result
+
+print(give_answer("what are the rules?"))
